@@ -8,121 +8,123 @@
 
 <meta name="description" content="Ringkasan lengkap buku Sapiens karya Yuval Noah Harari: perjalanan Homo sapiens melalui Revolusi Kognitif, Pertanian, Penyatuan, dan Ilmiah.">
 <meta name="author" content="Yuval Noah Harari">
-<meta property="og:title" content="Ringkasan Buku Sapiens: Riwayat Singkat Umat Manusia">
-<meta property="og:description" content="Ringkasan naratif, runtut, dan ilmiah-populer untuk pembaca awam.">
-<meta property="og:type" content="article">
-<meta property="og:locale" content="id_ID">
 
 <style>
-:root{--bg:#FFFFFF;--paper:#FFFFFF;--ink:#1A1A1A;--muted:#757575;--hair:#EAEAEA;--accent:#336699}
-@media (prefers-color-scheme: dark){
-  :root{--bg:#0F0F0F;--paper:#0F0F0F;--ink:#E0E0E0;--muted:#999999;--hair:#2A2A2A}
+:root{
+  --bg:#f4f6f8;
+  --paper:#ffffff;
+  --ink:#1A1A1A;
+  --muted:#757575;
+  --hair:#E6E8EB;
+  --accent:#336699;
+
+  --cog:#2d7ff9;
+  --farm:#ffb020;
+  --uni:#12b886;
+  --sci:#7c5cfc;
+  --close:#3e8ef7;
 }
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,Arial,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d0f12;
+    --paper:#121417;
+    --ink:#E0E0E0;
+    --muted:#999999;
+    --hair:#22262b;
+  }
+}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:16px; line-height:1.8;
+}
 .wrapper{max-width:680px;margin-inline:auto;padding:4rem 1.5rem}
-header{margin-bottom:3rem;text-align:left}
-h1{font-size:1.8rem;font-weight:600;line-height:1.25;letter-spacing:-0.02em;margin:0 0 .5rem 0;text-wrap:balance}
+header{margin-bottom:3rem}
+h1{font-size:1.8rem;font-weight:600;line-height:1.25;margin:0 0 .5rem}
 .byline{font-size:.9rem;color:var(--muted)}
-.byline strong{font-weight:500;color:var(--ink)}
-article{background:var(--paper)}
+.byline strong{color:var(--ink)}
 section+section{margin-top:2.5rem}
-h2{font-size:1.2rem;font-weight:600;line-height:1.4;margin:2rem 0 1rem 0;padding-bottom:.5rem;border-bottom:1px solid var(--hair);text-align:left}
-p{margin:0 0 1.25rem 0;font-size:1.05rem;text-wrap:pretty;text-align:left}
-p:last-of-type{margin-bottom:0}
-.figure{display:flex;justify-content:left;margin:1.5rem 0}
-.icon{width:100%;max-width:48px;height:auto;stroke-width:1.5px;opacity:.9}
-svg{stroke-linecap:round;stroke-linejoin:round}
-::selection{background:color-mix(in srgb,var(--accent) 20%,transparent)}
-@media print{body{font-size:12pt}.wrapper{padding:0}article{border:none}}
+h2{font-size:1.2rem;font-weight:600;margin:2rem 0 .75rem;padding-bottom:.5rem;border-bottom:1px solid var(--hair)}
+p{margin:0 0 1.25rem;font-size:1.05rem}
+
+/* blok ikon */
+.block{
+  background:var(--paper); border:1px solid var(--hair); border-radius:16px;
+  padding:20px; display:flex; justify-content:center; align-items:center;
+  margin:1rem 0 1.25rem; box-shadow:0 1px 2px rgba(0,0,0,.06);
+}
+.block svg{width:44px;height:44px;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* warna ikon */
+.iconKognitif{stroke:var(--cog)}
+.iconPertanian{stroke:var(--farm)}
+.iconPenyatuan{stroke:var(--uni)}
+.iconIlmiah{stroke:var(--sci)}
+.iconPenutup{stroke:var(--close)}
+
+/* tombol beli */
+.buyLink{
+  display:inline-block;
+  margin-top:3rem;
+  padding:.9rem 1.5rem;
+  background:var(--accent);
+  color:#fff;
+  font-size:1rem;
+  font-weight:500;
+  text-decoration:none;
+  border-radius:12px;
+  text-align:center;
+  transition:background .25s ease;
+}
+.buyLink:hover{background:color-mix(in srgb, var(--accent) 85%, black 15%)}
 </style>
 </head>
 <body>
 <div class="wrapper">
-  <header role="banner">
+  <header>
     <h1>Ringkasan Buku <em>Sapiens</em>: Riwayat Singkat Umat Manusia</h1>
     <div class="byline">Penulis: <strong>Yuval Noah Harari</strong></div>
   </header>
 
-  <article role="article">
-    <section id="pendahuluan" aria-labelledby="p1">
-      <h2 id="p1">Pendahuluan</h2>
-      <p><em>Sapiens</em> menelusuri perjalanan Homo sapiens dari hewan tak berarti di Afrika hingga penguasa planet. Pertanyaan besar yang mengikat seluruh narasi adalah: bagaimana makhluk rapuh ini mampu menyingkirkan spesies manusia lain, membangun peradaban, dan kini berpotensi menjadi “Tuhan” dengan rekayasa kehidupan?</p>
-      <p>Jawaban Harari dirajut melalui tiga revolusi besar—Kognitif, Pertanian, dan Ilmiah—ditambah proses panjang Penyatuan Umat Manusia yang menjalin dunia menjadi satu kesatuan.</p>
+  <article>
+    <section id="pendahuluan">
+      <h2>Pendahuluan</h2>
+      <div class="block"><svg class="iconPenutup" viewBox="0 0 24 24"><path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" /><path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" /></svg></div>
+      <p><em>Sapiens</em> menelusuri perjalanan Homo sapiens dari hewan tak berarti ...</p>
     </section>
 
-    <section id="kognitif" aria-labelledby="s1">
-      <h2 id="s1">1. Revolusi Kognitif (±70.000 Tahun Lalu)</h2>
-      <div class="figure" aria-hidden="true">
-        <!-- Otak -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M8.5 8.5c0-2 1.6-3.5 3.5-3.5s3.5 1.5 3.5 3.5" />
-          <path d="M7 12a3 3 0 0 1 0-6 3 3 0 0 1 3 3v7a3 3 0 0 1-3 3 3 3 0 0 1 0-6" />
-          <path d="M17 12a3 3 0 0 0 0-6 3 3 0 0 0-3 3v7a3 3 0 0 0 3 3 3 3 0 0 0 0-6" />
-        </svg>
-      </div>
-      <p>Revolusi kognitif dimulai oleh mutasi genetik yang mengubah struktur otak Sapiens. Kemampuan paling menentukan adalah bahasa fiktif: kapasitas membicarakan hal-hal yang tidak nyata, seperti roh, dewa, bangsa, atau hukum. Inilah yang membedakan manusia dari hewan lain yang hanya bisa berkomunikasi tentang hal konkret.</p>
-      <p>Kemampuan menciptakan cerita bersama atau realitas rekaan memungkinkan Homo sapiens bekerja sama secara fleksibel dalam jumlah besar, jauh melampaui batas alami kelompok akrab sekitar 150 orang. Mitos bersama, dari dewa pelindung hingga korporasi modern, menjadi fondasi kerja sama massal yang mengantarkan Sapiens menyebar dan mengalahkan Neanderthal.</p>
+    <section id="kognitif">
+      <h2>1. Revolusi Kognitif (±70.000 Tahun Lalu)</h2>
+      <div class="block"><svg class="iconKognitif" viewBox="0 0 24 24"><path d="M8.5 8.5c0-2 1.6-3.5 3.5-3.5s3.5 1.5 3.5 3.5" /><path d="M7 12a3 3 0 0 1 0-6 3 3 0 0 1 3 3v7a3 3 0 0 1-3 3 3 3 0 0 1 0-6" /><path d="M17 12a3 3 0 0 0 0-6 3 3 0 0 0-3 3v7a3 3 0 0 0 3 3 3 3 0 0 0 0-6" /></svg></div>
+      <p>Revolusi kognitif dimulai oleh mutasi genetik yang mengubah struktur otak ...</p>
     </section>
 
-    <section id="pertanian" aria-labelledby="s2">
-      <h2 id="s2">2. Revolusi Pertanian (±12.000 Tahun Lalu)</h2>
-      <div class="figure" aria-hidden="true">
-        <!-- Gandum -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M12 3v18" />
-          <path d="M12 6l-2-2M12 9l2-2M12 12l-2-2M12 15l2-2M12 18l-2-2" />
-          <path d="M8 19c1.5 0 2.5 1 4 1s2.5-1 4-1" />
-        </svg>
-      </div>
-      <p>Peralihan ke pertanian membuat manusia mulai menjinakkan gandum, padi, sapi, dan domba. Harari menyebut ini sebagai penipuan terbesar dalam sejarah: kehidupan petani lebih berat dibanding pemburu-peramu. Mereka bekerja lebih keras, makanannya kurang bervariasi, dan lebih rentan pada penyakit serta kelaparan akibat gagal panen.</p>
-      <p>Revolusi ini memang menambah produksi makanan dan mendorong ledakan populasi, tetapi justru menurunkan kualitas hidup rata-rata. Gandum bisa dikatakan “mendomestikasi” manusia, memaksa mereka bekerja keras demi kelangsungan spesies itu sendiri. Dari sinilah lahir surplus, masa depan yang bisa direncanakan, kepemilikan pribadi, serta hierarki sosial yang memberi keuntungan bagi segelintir elite.</p>
+    <section id="pertanian">
+      <h2>2. Revolusi Pertanian (±12.000 Tahun Lalu)</h2>
+      <div class="block"><svg class="iconPertanian" viewBox="0 0 24 24"><path d="M12 3v18" /><path d="M12 6l-2-2M12 9l2-2M12 12l-2-2M12 15l2-2M12 18l-2-2" /><path d="M8 19c1.5 0 2.5 1 4 1s2.5-1 4-1" /></svg></div>
+      <p>Peralihan ke pertanian membuat manusia mulai menjinakkan gandum ...</p>
     </section>
 
-    <section id="penyatuan" aria-labelledby="s3">
-      <h2 id="s3">3. Penyatuan Umat Manusia</h2>
-      <div class="figure" aria-hidden="true">
-        <!-- Globe -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <circle cx="12" cy="12" r="9" />
-          <path d="M3 12h18" />
-          <path d="M12 3a14 14 0 0 1 0 18" />
-          <path d="M12 3a14 14 0 0 0 0 18" />
-        </svg>
-      </div>
-      <p>Setelah pertanian, komunitas yang tadinya terisolasi mulai tersambung menjadi satu jaringan global. Proses penyatuan ini didorong oleh tiga kekuatan universal: uang, kekaisaran, dan agama. Uang berfungsi sebagai sistem kepercayaan yang paling lintas budaya, membuat perdagangan antarasing mungkin. Kekaisaran menaklukkan dan menyatukan berbagai etnis di bawah hukum, bahasa, dan budaya bersama. Agama-agama universal seperti Buddha, Kristen, dan Islam mengklaim aturan moral yang berlaku untuk semua orang, memberi legitimasi kosmik pada tatanan sosial.</p>
-      <p>Kombinasi ketiganya menjembatani jurang perbedaan dan memungkinkan kerja sama dalam skala yang belum pernah ada sebelumnya.</p>
+    <section id="penyatuan">
+      <h2>3. Penyatuan Umat Manusia</h2>
+      <div class="block"><svg class="iconPenyatuan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3a14 14 0 0 1 0 18" /><path d="M12 3a14 14 0 0 0 0 18" /></svg></div>
+      <p>Setelah pertanian, komunitas yang tadinya terisolasi mulai tersambung ...</p>
     </section>
 
-    <section id="ilmiah" aria-labelledby="s4">
-      <h2 id="s4">4. Revolusi Ilmiah (±500 Tahun Lalu)</h2>
-      <div class="figure" aria-hidden="true">
-        <!-- Teleskop -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M3 21l4-8" />
-          <path d="M7 13l6 8" />
-          <path d="M13 7l7-3-2 6-7 3 2-6z" />
-          <path d="M2 11l6 2" />
-        </svg>
-      </div>
-      <p>Revolusi ilmiah bukan revolusi pengetahuan, melainkan revolusi ketidaktahuan. Sains modern lahir dari pengakuan bahwa manusia tidak tahu jawaban atas pertanyaan-pertanyaan besar. Alih-alih mengandalkan kitab suci atau tradisi, ilmu bergerak dengan observasi, matematika, dan teori. Tujuannya bukan hanya memahami dunia, tetapi juga memperoleh kekuatan baru melalui teknologi.</p>
-      <p>Revolusi ini terjalin erat dengan imperialisme dan kapitalisme. Ekspedisi kolonial Eropa adalah proyek ilmiah sekaligus penaklukan, sementara kapitalisme membiayai riset dengan harapan pertumbuhan dan keuntungan. Ikatan sains, imperium, dan modal menjadi mesin utama sejarah lima abad terakhir, memperpanjang usia harapan hidup, tetapi juga menimbulkan kerusakan ekologi dan penderitaan hewan dalam skala besar.</p>
+    <section id="ilmiah">
+      <h2>4. Revolusi Ilmiah (±500 Tahun Lalu)</h2>
+      <div class="block"><svg class="iconIlmiah" viewBox="0 0 24 24"><path d="M3 21l4-8" /><path d="M7 13l6 8" /><path d="M13 7l7-3-2 6-7 3 2-6z" /><path d="M2 11l6 2" /></svg></div>
+      <p>Revolusi ilmiah bukan revolusi pengetahuan, melainkan revolusi ketidaktahuan ...</p>
     </section>
 
-    <section id="penutup" aria-labelledby="p2">
-      <h2 id="p2">Penutup</h2>
-      <div class="figure" aria-hidden="true">
-        <!-- Buku Terbuka -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" />
-          <path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" />
-        </svg>
-      </div>
-      <p>Pada akhirnya, Homo sapiens berevolusi dari hewan tak berarti menjadi kekuatan yang mampu mengubah planet dan bahkan hukum seleksi alam itu sendiri. Kini manusia berada di ambang menciptakan cyborg, bioteknologi, hingga kehidupan anorganik. Pertanyaannya: apakah semua itu membuat kita lebih bahagia?</p>
-      <p>Kekuatan yang meningkat tidak otomatis disertai kebijaksanaan. Harari memperingatkan tentang bahaya “dewa-dewa yang tidak puas”: makhluk dengan kekuatan ilahi tapi tanpa arah tujuan. Masa depan bergantung pada satu hal mendasar—apa sebenarnya yang kita inginkan—karena sebentar lagi, mungkin kita benar-benar bisa mewujudkannya.</p>
+    <section id="penutup">
+      <h2>Penutup</h2>
+      <div class="block"><svg class="iconPenutup" viewBox="0 0 24 24"><path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" /><path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" /></svg></div>
+      <p>Pada akhirnya, Homo sapiens berevolusi dari hewan tak berarti ...</p>
     </section>
+
+    <!-- Tombol beli -->
+    <a href="https://s.shopee.co.id/AKQrx4rNI2" class="buyLink" target="_blank" rel="noopener">Beli Buku Aslinya</a>
   </article>
 </div>
 </body>
